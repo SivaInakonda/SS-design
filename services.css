@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand{
+    font-family: 'ubuntu' , sans-serif;
+    font-weight: 500;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: crimson;
+    transition: all .5s;
+
+}
+ a:hover::after{
+    width: 100%;
+}
+ul li ul.navbar li{
+    display: block;
+}
+ul li ul.navbar{
+    width: 100%;
+    background:crimson;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px;
+}
+ul li:hover ul.navbar{
+    display: block;
+}
+.work h1{
+    margin-top: 150px;
+    font-family: 'ubuntu' , sans-serif;
+    color: black;
+}
+.work p{
+   margin-bottom: 30px;
+   font-family: 'ubuntu' , sans-serif;
+}
+.card{
+   margin-left: 25px;
+   margin-bottom: 20px;
+   padding: 30px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   background: linear-gradient(
+       45deg,
+       hsla(168, 85%, 52%, 0.5),
+       hsla(263, 88%, 45%, 0.5) 100%
+     );
+}
+.tools{
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'ubuntu' , sans-serif;
+}
+.tools img{
+   padding: 20px;
+   width: 120px;
+   height: 150px;
+}
+.detail h4{
+  margin-top: 150px;
+  font-family: 'ubuntu' , sans-serif;
+  text-align: center;
+  color: crimson;
+}
+.detail h2{
+    font-family: 'ubuntu' , sans-serif;
+    text-align: center;
+  }
+  .detail h3{
+    font-family: 'ubuntu' , sans-serif;
+    text-align: center;
+    margin-top: 40px;
+  }

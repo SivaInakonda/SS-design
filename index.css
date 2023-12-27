@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand{
+    font-family: 'ubuntu' , sans-serif;
+    font-weight: 500;
+}
+.banner-image{
+    background-image: url(banner.jpg);
+    background-size: cover;
+    font-family: 'ubuntu' , sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+.content h1{
+    margin-left: 40px;
+}
+.content button{
+    width: 150px;
+    height: 35px;
+    background-color: crimson;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10%;
+    border: none;
+    border-radius: 6px;
+    font-size: 10px;
+
+}
+button:hover{
+    background-color: rgb(47, 104, 190);
+    cursor:pointer;
+    color: white;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: crimson;
+    transition: all .5s;
+
+}
+ a:hover::after{
+    width: 100%;
+}
+ul li ul.navbar li{
+    display: block;
+}
+ul li ul.navbar{
+    width: 100%;
+    background:crimson;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 20px;
+}
+ul li:hover ul.navbar{
+    display: block;
+}
+.services h1{
+     margin-top: 50px;
+     margin-left: 25px;
+     font-family: 'ubuntu' , sans-serif;
+     color: black;
+}
+.services p{
+    color: crimson;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    font-family: 'ubuntu' , sans-serif;
+}
+.card{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+}
+
+.caption h1{
+    align-items: center;
+    font-family: 'ubuntu' , sans-serif;
+    font-weight: 500;
+    margin: 50px;
+    text-align: center;
+    color: black;
+}
+.team{
+    background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+}
+.team .member{
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #fff;
+}
+.team .member .pic{
+    overflow: hidden;
+    width: 150px;
+   height: 100px;
+}
+.team .member .info{
+    padding-left: 30px;
+}
+.team .member h4{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: crimson;
+}
+.team .member span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+.team .member span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: 0;
+}
+.team .member p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+.team .member .social{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.team .member .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+}
+.team .member .social a i{
+    color: crimson;
+    font-size: 16px;
+    margin: 0 2px;
+
+}
+.team .member .social a:hover{
+    background: crimson;
+}
+.team .member .social a:hover i{
+    color: white;
+}
+.team .member .social a+a{
+    margin-left: 8px;
+}
+.team1{
+    padding: 60px 30px;
+    overflow: hidden;
+    margin-left: 20px;
+    font-family: 'ubuntu' , sans-serif;
+}
+.team2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.main{
+    background-image: url("form\ logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+    padding: 75px 0px;
+}
+.form-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-left: 18px;
+}
+.form-box input{
+    border-radius: 10px;
+}
+.form-box select{
+    border-radius: 10px;
+}
+.register-btn{
+    background-image: linear-gradient(to right, #63118b, #f80f88 , #f80f88);
+    border: none;
+    border-radius: 10px;
+
+}
+
+.test h1{
+   font-size: 50px;
+   font-family: 'ubuntu' , sans-serif;
+   margin-left: 15px;
+}
+.test h2{
+    font-family: 'ubuntu' , sans-serif;
+}
+.expose{
+    background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+   
+   padding-top: 50px;
+}
+.expose img{
+    width:220px;
+    height:450px;
+   margin-left: 80px;
+    margin-bottom: 50px;
+}
+.expose h1{
+    font-family: 'ubuntu' , sans-serif;
+    color: white;
+   
+}
+.expose h4{
+    font-family: 'ubuntu' , sans-serif;
+    margin-bottom: 50px;
+    color: white;
+}
+.pics{
+    margin-left: 40px;
+}
+.mt-100{
+	
+	margin-top:60px;
+}
+
+.carousel .carousel-indicators li{
+	
+	display:inline-block;
+	width:10px;
+	height:10px;
+	cursor:pointer;
+	border:1px solid rgb(0, 0, 87);
+	background: rgba(56, 142, 176, 0.187);
+	border-radius:2px;
+	
+	
+}
+.card-raised{
+	background-color: rgb(212, 232, 241);
+}
+
+.cardimage{
+	height: 280px;
+}
+.cardimage1{
+	height: 200px;
+}
+.head {
+    color: #323f4b;
+    font-size: 40px;
+}
+
+.para {
+    color: #9aa5b1;
+    font-size: 20px;
+}
+.testimonials{
+    font-family: 'ubuntu' , sans-serif;
+}
